@@ -2,11 +2,14 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Alura Typer</title>
+    <title>Alura Typer 3.0</title>
     <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/libs/selectize.default.css">
+    <link rel="stylesheet" href="css/libs/tooltipster.bundle.min.css">
     <link rel="stylesheet" href="css/libs/google-fonts.css">
     <link rel="stylesheet" href="css/estilos.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="author" content="Wilgner Souza">
 </head>
 <body>
 <div class="container">
@@ -30,22 +33,28 @@
     <textarea class="campo-digitacao" rows="8" cols ="40"></textarea>
 
     <div class="botoes">
-        <a id="botao-reiniciar" class="btn-floating btn-small waves-effect waves-light blue">
+        <a id="botao-reiniciar" class="tooltip btn-floating btn-small waves-effect waves-light blue" title="Reiniciar Jogo">
             <i class="material-icons" >restore</i>
         </a>
-        <a id="botao-placar" class="btn-floating btn-small waves-effect waves-light orange">
+        <a id="botao-placar" class="tooltip btn-floating btn-small waves-effect waves-light orange" title="Mostrar Placar">
             <i class="material-icons">assignment</i>
         </a>
-        <a id="botao-frase" class="btn-floating btn-small waves-effect waves-light red">
+        <a id="botao-frase" class="tooltip btn-floating btn-small waves-effect waves-light red" title="Frase Aleatória">
             <i class="material-icons">shuffle</i>
         </a>
-        <a id="botao-frase-id" class="btn-floating btn-small waves-effect waves-light purple">
-            <i class="material-icons">repeat_one</i>
-        </a>
-        <a id="botao-sync" class="btn-floating btn-small waves-effect waves-light green">
-            <i class="material-icons">save</i>
+        <a id="botao-frase-id" class="tooltip btn-floating btn-small waves-effect waves-light purple" title="Escolher Frase">
+            <i class="material-icons">forward</i>
         </a>
         <input type="number" min="0" id="frase-id">
+        <div class="select-user">
+            <select id="user">
+               <option value="Wilgner">Wilgner</option>
+            </select>
+        </div>
+        <a id="botao-sync" class="mytooltip btn-floating btn-small waves-effect waves-light green" title="Placar Salvo no Servidor">
+            <i class="material-icons">save</i>
+        </a>
+        
     </div>
 
     <ul class="center">
@@ -74,5 +83,7 @@
 <script src="js/main.js"></script>
 <script src="js/placar.js"></script>
 <script src="js/frase.js"></script>
+<script src="js/selectize.js"></script>
+<script src="js/tooltipster.bundle.min.js"></script>
 </body>
 </html>

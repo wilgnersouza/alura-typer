@@ -1,0 +1,23 @@
+.card{
+	width: 49%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#botao-jogue{
+	width: 150px;
+	display: block;
+	margin: 50px auto;
+}
+
+.imagem-jogo {
+	border: 2px solid rgb(214, 205, 205);
+}
+
+.slider {
+    height: auto;
+}
+
+.slick-prev:before, .slick-next:before{
+    color: rgb(48, 44, 44);
+}

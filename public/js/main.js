@@ -8,6 +8,14 @@ $(function() {
     inicializaMarcadores();
     $("#botao-reiniciar").click(reiniciaJogo);
     atualizaPlacar();
+    $("#user").selectize({
+        create: true,
+        sortField: 'text'
+    });
+    $(".tooltip").tooltipster();
+    $(".mytooltip").tooltipster({
+        trigger: 'custom'
+    });
 });
 
 function atualizaTamanhoFrase() {

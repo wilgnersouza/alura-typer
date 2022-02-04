@@ -6,6 +6,7 @@
 }
 body{
     overflow: scroll;
+    
 }
 
 .campo-digitacao {
@@ -57,4 +58,16 @@ body{
 }
 #botao-sync{
     float: right;
+}
+.select-user{
+    display:inline-block;
+    margin-left: 10px;
+}
+
+#user{
+    display:inline-block;
+}
+.selectize-input {
+    width: 130px;
+    vertical-align: middle;
 }

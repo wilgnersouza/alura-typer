@@ -7,7 +7,7 @@ function mostraPlacar(){
 
 function inserePlacar() {
     var corpoTabela = $(".placar").find("tbody");
-    var usuario = "Usuario"
+    var usuario = $("#user").val();
     var numPalavras = $("#contador-palavras").text();
 
     var linha = novaLinha(usuario, numPalavras);
@@ -78,7 +78,14 @@ function sincPlacar(){
 
     $.post("http://localhost:3000/placar", dados, ()=>{
         console.log("placar sincronizado");
-    })
+        $('.mytooltip').tooltipster('open');
+    }).fail(()=>{
+        $('.myooltip').tooltipster('open').tooltipster("content", "Falha ao sincronizar");
+    }).always(()=>{
+        setTimeout(()=>{
+            $('.mytooltip').tooltipster('close')
+        }, 2000);
+    });
 }
 
 function atualizaPlacar(){
