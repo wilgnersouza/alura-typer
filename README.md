@@ -9,7 +9,7 @@ Um jogo de digitação. Desafie seus amigos e veja quem será o mais rápido �
 
 ---
 
-### 🛠 Tecnologias e Técnicas Utilizadas 🛠
+## 🛠 Tecnologias e Técnicas Utilizadas 🛠
 
 As seguintes ferramentas foram usadas na construção deste projeto:
 
@@ -57,8 +57,7 @@ Digite seu nome onde está o <b>Wilgner</b> para adicionar o nome dos jogadores 
 
 ---
 
-### Autor ✍
----
+## Autor ✍
 
 <a href="https://www.linkedin.com/in/wilgner-souza-stw97/">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/wilgnersouza" width="100px;" alt="Wilgner Souza"/>
